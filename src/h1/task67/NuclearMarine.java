@@ -29,7 +29,22 @@ public class NuclearMarine {
 		this.crew = crew;
 	}
 
-	public NuclearMarine() {
+	public NuclearMarine(String name, double speed, int crew) {
+		setName(name);
+		setSpeed(speed);
+		setCrew(crew);
+		NuclearMarineEngine engine = new NuclearMarineEngine();
+	}
 
+
+	public class NuclearMarineEngine {
+		private NuclearMarineEngine() {
+			start();
+		}
+
+		private void start() {
+			//engine logic
+			System.out.println("Marine started.");
+		}
 	}
 }
