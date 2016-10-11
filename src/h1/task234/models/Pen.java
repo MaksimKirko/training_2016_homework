@@ -6,11 +6,11 @@ public class Pen extends Stationery {
 	public double getInkAmount() {
 		return inkAmount;
 	}
-	
+
 	public void setInkAmount(double inkAmount) {
 		this.inkAmount = inkAmount;
 	}
-	
+
 	public Pen(String brand) {
 		setInkAmount(100);
 		setBrand(brand);
