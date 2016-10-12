@@ -1,5 +1,6 @@
-package h1.task67;
+ package h1.task67;
 
+ @Outer(inner = "NuclearMarineEngine")
 public class NuclearMarine {
 	private String name;
 	private double speed;
@@ -36,7 +37,7 @@ public class NuclearMarine {
 		NuclearMarineEngine engine = new NuclearMarineEngine();
 	}
 
-
+	@Inner(outer = "NuclearMarine")
 	public class NuclearMarineEngine {
 		private NuclearMarineEngine() {
 			start();
